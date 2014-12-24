@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="FundingApp">
+  <head lang="en">
+    <title></title>
+    <meta charset="UTF-8">
+    <script src="javascripts/angular.min.js"></script>
+    <script src="javascripts/controllers.js"></script>
+  </head>
+  <body>
+    <form ng-submit="requestFunding()" ng-controller="FundingController">
+      Starting: <input ng-change="computeNeeded()" ng-model="funding.startingEstimate">
+      Recommendation: {{funding.needed}}
+      <button>Fund My Startup!</button>
+    </form>
+  </body>
+</html>
+

@@ -11,11 +11,13 @@
         {title: 'Pebbles', quantity: 5, price: 6.95}
       ];
     }
+    return items;
   });
 
   shoppingCartModule.controller('ShoppingCartController',
       ['$scope', 'Items', function($scope, Items) {
 
+    $scope.items = Items.query();
     $scope.remove = function(index) {
       $scope.items.splice(index, 1);
     }

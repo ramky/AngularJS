@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="ShoppingApp">
+  <head lang="en">
+    <title></title>
+    <meta charset="UTF-8">
+    <script src="javascripts/angular.min.js"></script>
+    <script src="javascripts/controllers.js"></script>
+  </head>
+  <body ng-controller="ShoppingController">
+    <h1>Shop!</h1>
+    <table>
+      <tr ng-repeat="item in items">
+        <td>{{item.title}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.price | currency}}</td>
+        <td><button ng-click="remove($index)">Remove</button></td>
+      </tr>
+    </table>
+  </body>
+</html>
+

@@ -1,0 +1,15 @@
+{
+  "name": "guthub",
+  "version": "1.0.0",
+  "description": "A Simple Receipe Management App",
+  "main": "web_server.js",
+  "dependencies": {
+    "express": "^4.11.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "karma"
+  },
+  "author": "Ram Iyer",
+  "license": "ISC"
+}
